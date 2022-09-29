@@ -1,7 +1,7 @@
 # Задайте список из вещественных чисел. Напишите программу, которая найдёт разницу между максимальным и минимальным значением дробной части элементов.
 
-from function import getrandomlist
-from function import getdifferenceofelements
+from function import get_random_list
+from function import get_difference_of_elements
 
 numofelements, minelements, maxelements = (
     input("Введите количесво элементов списка: "),
@@ -18,10 +18,10 @@ if (
     print("Вы ввели недопустимое значение")
     quit()
 
-list = getrandomlist(
+list = get_random_list(
     int(numofelements), float(minelements), float(maxelements), "float"
 )
 print(f"Полученный список чисел: {list}")
 print(
-    f"Разница между максимальным и минимальным значением дробной части элементов: {getdifferenceofelements(list)}"
+    f"Разница между максимальным и минимальным значением дробной части элементов: {get_difference_of_elements(list)}"
 )

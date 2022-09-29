@@ -3,4 +3,4 @@ from function import get_fibonacci
 
 number = int(input("Введите целое число: "))
 
-print(get_fibonacci(number))
+print(f'Cписок чисел Фибоначчи: {get_fibonacci(number)}')
